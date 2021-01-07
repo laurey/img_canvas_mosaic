@@ -1,0 +1,75 @@
+:root {
+  font-size: 14px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --main-bg-color: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.flex.row {
+  overflow: hidden;
+}
+
+.row .col .range-input {
+  cursor: pointer;
+  width: 720px;
+}
+
+.rangeValContainer {
+  font-size: 1.5em;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.output-container {
+  padding: 1em;
+  background: rgba(226, 129, 132, 0.145);
+}
+
+.output-container > .col {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: var(--main-bg-color);
+}
+
+.container {
+  width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+  .row {
+    width: 95vw;
+  }
+  .output-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}

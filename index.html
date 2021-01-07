@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Mosaic Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="flex row">
+      <div class="col">
+        <input type="range" min="5" max="100" value="20" id="range" step=".1" class="range-input" />
+      </div>
+    </div>
+    <p class="rangeValContainer">Range: <span id="val" class="rangeWrap"></span></p>
+    <div class="col flex row output-container">
+      <div class="col">
+        <canvas id="canvas" class="canvas" width="480" height="320"></canvas>
+      </div>
+      <div class="col">
+        <canvas id="target" class="canvas" width="480" height="320"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="./EventUtil.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
